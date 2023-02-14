@@ -13,11 +13,8 @@ app.use(express.json());
 
 const fetchConversionRates = async () => {
   try {
-    // const response = await axios.get(
-    //   `https://api.apilayer.com/fixer/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}`
-    // );
     const response = await axios.get(
-      `https://api.exchangerate-api.com/v4/latest/${process.env.BASE_CURRENCY}`
+      `https://api.apilayer.com/fixer/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}`
     );
     const rates = response?.data?.rates;
 
@@ -37,7 +34,6 @@ const fetchConversionRates = async () => {
 };
 
 // This will run the job every 4 hours, starting at midnight (00:00) and ending at 8:00 PM (20:00).
-fetchConversionRates();
 const cronJob = new cron.CronJob("0 */4 * * *", () => {
   fetchConversionRates();
 });
