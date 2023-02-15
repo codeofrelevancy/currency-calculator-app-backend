@@ -36,6 +36,14 @@ This application is designed to be simple and easy to use, with a clean and intu
 
 ## API
 
+Fixer API, Free Plan, 100 requests a month
+
 ```html
 https://api.apilayer.com/fixer/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}
+```
+
+Exchange Rates Data API API, Free Plan, 250 requests a month
+
+```html
+https://api.apilayer.com/exchangerates_data/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}
 ```
