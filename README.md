@@ -47,3 +47,9 @@ Exchange Rates Data API API, Free Plan, 250 requests a month
 ```html
 https://api.apilayer.com/exchangerates_data/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}
 ```
+
+## How to Deploy Your Node.js Application for Free with Render
+
+```html
+https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/
+```
