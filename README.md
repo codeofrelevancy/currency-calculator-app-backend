@@ -33,3 +33,23 @@ To make it even easier for users to see at a glance whether the conversion rates
 This feature helps ensure that users always have access to the most accurate and current conversion rates, making the application a reliable and trustworthy tool for all of their currency conversion needs.
 
 This application is designed to be simple and easy to use, with a clean and intuitive interface that makes it easy for users to convert currencies on the go. With its reliable backend server and up-to-date conversion rates, users can trust that they are getting accurate and current information every time they use the tool.
+
+## API
+
+Fixer API, Free Plan, 100 requests a month
+
+```html
+https://api.apilayer.com/fixer/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}
+```
+
+Exchange Rates Data API API, Free Plan, 250 requests a month
+
+```html
+https://api.apilayer.com/exchangerates_data/latest?base=${process.env.BASE_CURRENCY}&apikey=${process.env.APILAYER_KEY}
+```
+
+## How to Deploy Your Node.js Application for Free with Render?
+
+```html
+https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/
+```

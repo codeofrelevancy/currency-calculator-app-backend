@@ -1,10 +1,10 @@
 // Import the functions you need from the SDKs you need
-const { initializeApp, cert } = require("firebase-admin/app");
-const { getFirestore } = require("firebase-admin/firestore");
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getFirestore } = require('firebase-admin/firestore');
 
-const serviceAccount = require("./firebase-cert.json");
+const serviceAccount = require('./firebase-cert.json');
 
-// Initialize Firebase
+// Initialize the firebase
 initializeApp({
   credential: cert(serviceAccount),
 });
